@@ -1,0 +1,242 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  padding: 4% 15%;
+}
+
+/*mobile first */
+/* wecolme section */
+
+.bgfoto {
+  background-image: url(../img/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+#welcome-section {
+  height: 100vh;
+  padding: 50% 0;
+}
+
+
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: #ababab;
+}
+
+.welcome-name-md {
+  display: none;
+  color: white;
+  font-weight: bolder;
+}
+
+.welcome-name-sm {
+  font-size: 20vw;
+  text-align: left;
+  color: white;
+  font-weight: bolder;
+
+}
+
+.welcome-sub {
+  font-family: 'Special Elite', cursive;
+  font-size: 6vw;
+  color: white;
+  text-align: left;
+  padding-top: 3%;
+}
+
+.logo_mella {
+  display: none;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+
+/* about section */
+
+#about {
+  background-color: white;
+  margin-top: 10%;
+}
+
+.row {
+  padding: 4% 2%;
+}
+
+.subtitulo {
+  font-family: 'Special Elite', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-me {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.foto-mella {
+  display: block;
+  margin: 5% auto;
+  width: 100%;
+}
+
+
+/* projects section */
+
+
+.claro {
+  color: white;
+}
+
+#projects {
+  height: 100%;
+  }
+
+  #projects h1 {
+    position: relative;
+  }
+
+  .bgfotocover {
+    background-image: url(../img/bg-img.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .bgfotocover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+.proyectos {
+  position: relative;
+}
+
+.proyectos img {
+  width: 75vw;
+  margin: 2% 0;
+}
+
+.carousel {
+  display: none;
+}
+
+/*footer section */
+
+.pie {
+  background-color: black;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 1%;
+  height: 8vh;
+  line-height: 8vh;
+}
+
+.home {
+  
+  left: 50%;
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 8vh;
+    height: 5vh;
+}
+
+
+
+@media (min-width:992px) {
+
+  /* welcome section */
+
+  #welcome-section {
+    padding-top: 0;
+  }
+
+  .welcome-name-sm {
+    display: none;
+  }
+
+  .welcome-name-md {
+    font-size: 10rem;
+    display: block;
+    text-align: center;
+    padding: 8% 0 2%;
+  }
+
+  .welcome-sub {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+
+  .logo_mella {
+    display: block;
+    margin: 8% auto 0;
+    width: 25%;
+  }
+
+  /* about me */
+
+  .foto-mella {
+    width: 100%;
+
+    margin-left: 5%;
+
+  }
+
+  .subtitulo {
+    font-size: 3.5rem;
+    margin-bottom: 4%;
+  }
+
+  .about-me {
+    font-size: 1.5rem;
+    padding-top: 3%;
+    margin-right: 5%;
+  }
+
+/* proyects */
+
+.carousel {
+  display: block;
+}
+.proyectos {
+  display: none;
+}
+
+/* footer */
+
+.pie {
+  font-size: 2.5rem;
+}
+
+#footer a {
+  height: 10vh;
+  line-height: 10vh;
+}
+
+}
